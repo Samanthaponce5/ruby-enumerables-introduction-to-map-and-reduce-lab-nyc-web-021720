@@ -1,41 +1,45 @@
-# My Code here....
 def map_to_negativize(source_array)
-  new_arr = []
-  counter = 0 
-  while counter < source_array.length 
-  new_arr << source_array[counter] * -1
-  counter += 1
+  i = 0 
+  arr = []
+  while i < source_array.length 
+   negative = source_array[i] * -1
+   i += 1
+   arr << negative
 end
-new_arr
+arr 
 end
 
 def map_to_no_change(source_array)
-  new_array = []
-  counter = 0 
-  while counter < source_array.length 
-  counter += 1 
-end 
-  source_array
+  arr = []
+  i = 0 
+  while i < source_array.length
+  names = source_array[i]
+  i += 1 
+  arr << names
+end
+arr
 end
 
 def map_to_double(source_array)
-  new_arrays = []
-  counter = 0 
-  while counter < source_array.length
-  new_arrays << source_array[counter] * 2
-  counter += 1 
+  i = 0 
+  arr = []
+  while i < source_array.length
+  num = source_array[i] * 2 
+  i += 1 
+  arr << num
 end
-new_arrays
+  arr
 end
 
 def map_to_square(source_array)
-  new_ar = []
-  counter = 0 
-  while counter < source_array.length
-  new_ar << source_array[counter] ** 2 
-  counter += 1 
+  i = 0 
+  arr = []
+  while i < source_array.length
+  num = source_array[i]**2 
+  i += 1 
+  arr << num 
 end
-  new_ar
+  arr
 end
 
 
@@ -61,7 +65,6 @@ end
 end
 
 
-
 def reduce_to_any_true(source_array)
   counter = 0 
   while counter < source_array.length
@@ -70,14 +73,3 @@ def reduce_to_any_true(source_array)
 end 
 return false
 end
-
-
-
-
-
-
-
-
-
-
-
