@@ -1,83 +1,79 @@
-# My Code here....
 def map_to_negativize(source_array)
-  new_arr = []
-  counter = 0 
-  while counter < source_array.length 
-  new_arr << source_array[counter] * -1
-  counter += 1
+  i = 0 
+  arr = []
+  while i < source_array.length 
+   negative = source_array[i] * -1
+   i += 1
+   arr << negative
 end
-new_arr
+arr 
 end
 
 def map_to_no_change(source_array)
-  new_array = []
-  counter = 0 
-  while counter < source_array.length 
-  counter += 1 
-end 
-  source_array
+  arr = []
+  i = 0 
+  while i < source_array.length
+  names = source_array[i]
+  i += 1 
+  arr << names
+end
+arr
 end
 
 def map_to_double(source_array)
-  new_arrays = []
-  counter = 0 
-  while counter < source_array.length
-  new_arrays << source_array[counter] * 2
-  counter += 1 
+  i = 0 
+  arr = []
+  while i < source_array.length
+  num = source_array[i] * 2 
+  i += 1 
+  arr << num
 end
-new_arrays
+  arr
 end
 
 def map_to_square(source_array)
-  new_ar = []
-  counter = 0 
-  while counter < source_array.length
-  new_ar << source_array[counter] ** 2 
-  counter += 1 
+  i = 0 
+  arr = []
+  while i < source_array.length
+  num = source_array[i]**2 
+  i += 1 
+  arr << num 
 end
-  new_ar
+  arr
 end
 
 
 
 def reduce_to_total(source_array, starting_point = 0)
-  new_ar = starting_point
-  counter = 0 
-  while counter < source_array.length
-  new_ar += source_array[counter]
-  counter += 1
-end 
-new_ar
-end
-
-  def reduce_to_all_true(source_array)
-  i = 0
-  while i < source_array.length do
-    return false if !source_array[i]
-    i += 1
-  end
-  return true
+  i = 0 
+  total = 0 
+  while i < source_array.length
   
 end
+  i +=1
+end
 
+
+def reduce_to_all_true(source_array)
+   i = 0 
+   total = 0 
+   while i < source_array.length
+   if source_array[i]
+     total += source_array[i]
+   end
+   i+= 1 
+ end
+  total
+end
 
 
 def reduce_to_any_true(source_array)
-  counter = 0 
-  while counter < source_array.length
-  return true if source_array[counter]
-  counter+= 1 
-end 
-return false
+  i = 0 
+  total = 0 
+  while i < source_array.length 
+  source_array[i]
+  i += 1 
+  
 end
-
-
-
-
-
-
-
-
-
-
-
+  
+end
