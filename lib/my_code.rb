@@ -49,8 +49,6 @@ def reduce_to_total(source_array, starting_point = 0)
   
   while i < source_array.length
   if source_array !=starting_point
-    source_array[i]
-  else
     source_array[i]+ starting_point
   end
   i +=1
