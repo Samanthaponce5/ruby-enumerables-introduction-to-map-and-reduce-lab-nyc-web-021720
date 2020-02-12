@@ -65,6 +65,7 @@ def reduce_to_all_true(source_array)
    total += source_array[i]
    i += 1
  end
+ total
 end
 
 
