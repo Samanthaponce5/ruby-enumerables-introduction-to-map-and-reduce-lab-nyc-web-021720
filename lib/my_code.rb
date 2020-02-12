@@ -75,10 +75,8 @@ def reduce_to_any_true(source_array)
   while i < source_array.length 
   if source_array[i]
  total = source_array[i]
-
  end
   i += 1 
 end
-false
-
+total
 end
